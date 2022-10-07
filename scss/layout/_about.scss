@@ -1,0 +1,185 @@
+.about {
+  margin-top: 70px;
+  &__div {
+    display: flex;
+    justify-content: space-between;
+
+    &-imgA {
+      display: none;
+    }
+
+    &-imgC {
+      display: none;
+    }
+
+    &-wrap {
+      max-width: 350px;
+
+      &--hr {
+        height: 1px;
+        background: #33323d;
+        mix-blend-mode: normal;
+        opacity: 0.15;
+      }
+
+      &--title {
+        padding-top: 50px;
+        font-family: "Ibarra Real Nova";
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: -0.357143px;
+        color: $GrayishDarkBlue;
+      }
+
+      &--text {
+        font-family: "Public Sans";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: $GrayishDarkBlue;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+      }
+
+      &--btn {
+         border: #33323d 1px solid;
+        height: 48px;
+        width: 202px;
+        font-family: "Public Sans";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $GrayishDarkBlue;
+        margin-bottom: 96px;
+        background-color: #fff;
+
+      }
+      &--btn:hover {
+        border: none;
+        color: #fff;
+        background: $GrayishDarkBlue;
+      }
+
+      &--btn:active {
+        color: $GrayishDarkBlue;
+        background-color: #fff;
+        border:1px solid rgba(0, 0, 0, 0.206);
+      }
+    }
+  }
+}
+
+// RESPONSIVE
+@media only screen and (max-width: 992px) {
+  .about {
+    &__div {
+      display: flex;
+      justify-content: space-between;
+
+      &-wrap {
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    &__div {
+      display: flex;
+      justify-content: space-between;
+&--title{
+  margin-top: 0;
+}
+&--btn{
+  margin-bottom: 0;
+}
+      &-imgB {
+        display: none;
+      }
+
+      &-imgA {
+        display: block;
+      }
+
+      &-wrap {
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 688px) {
+  .about {
+    &__div {
+      display: flex;
+      justify-content: space-between;
+
+      &-wrap {
+        max-width: 270px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .about {
+    &__div {
+      display: block;
+      margin: 0 22%;
+      &-imgB {
+        display: none;
+      }
+
+      &-imgA {
+        display: none;
+      }
+
+      &-imgC {
+        display: block;
+      }
+
+      &-wrap {
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .about {
+    &__div {
+      display: block;
+      margin: 0 16%;
+      &-imgB {
+        display: none;
+      }
+
+      &-imgA {
+        display: none;
+      }
+
+      &-imgC {
+        display: block;
+      }
+
+      &-wrap {
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .about {
+    &__div {
+      display: block;
+      margin:0;
+     
+    }
+  }
+
+}
